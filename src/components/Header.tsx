@@ -53,17 +53,43 @@ const Header: React.FC = () => {
         </div>
 
         {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-md border-t border-neutral-200">
-            <div className="flex flex-col py-4 px-6 space-y-2">
-              <button onClick={() => scrollToSection('home')} className="mobile-nav-link">Home</button>
-              <button onClick={() => scrollToSection('portfolio')} className="mobile-nav-link">Portfolio</button>
-              <button onClick={() => scrollToSection('services')} className="mobile-nav-link">Services</button>
-              <button onClick={() => scrollToSection('about')} className="mobile-nav-link">About</button>
-              <button onClick={() => scrollToSection('contact')} className="mobile-nav-link">Contact</button>
-            </div>
-          </div>
-        )}
+       { /* Overlay & Sidebar */ }
+<div className={`fixed inset-0 z-40 flex transition-all duration-300 ${isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+  {/* Overlay background */}
+  <div
+    className={`fixed inset-0 bg-black/40 backdrop-blur-sm transition-opacity duration-300 ${isMenuOpen ? 'opacity-100' : 'opacity-0'}`}
+    onClick={() => setIsMenuOpen(false)}
+  />
+
+  {/* Sidebar menu */}
+  <div
+    className={`relative z-50 w-72 max-w-full h-full bg-white shadow-lg transform transition-transform duration-300 ease-in-out
+      ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}
+  >
+    {/* Header */}
+    <div className="flex justify-between items-center p-4 border-b border-neutral-200">
+      <div className="text-xl font-bold text-neutral-800">
+        <span className="text-yellow-600">Lux</span>Interiors
+      </div>
+      <button
+        onClick={() => setIsMenuOpen(false)}
+        className="p-2 text-neutral-800 hover:text-yellow-600"
+      >
+        <X size={24} />
+      </button>
+    </div>
+
+    {/* Navigation Links */}
+    <div className="flex flex-col p-6 space-y-4">
+      <button onClick={() => scrollToSection('home')} className="mobile-nav-link">Home</button>
+      <button onClick={() => scrollToSection('portfolio')} className="mobile-nav-link">Portfolio</button>
+      <button onClick={() => scrollToSection('services')} className="mobile-nav-link">Services</button>
+      <button onClick={() => scrollToSection('about')} className="mobile-nav-link">About</button>
+      <button onClick={() => scrollToSection('contact')} className="mobile-nav-link">Contact</button>
+    </div>
+  </div>
+</div>
+
       </nav>
 
       <style jsx>{`
