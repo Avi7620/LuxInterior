@@ -30,14 +30,14 @@ const Hero: React.FC = () => {
         <p className="text-xl md:text-2xl mb-8 text-neutral-200 font-light max-w-2xl mx-auto leading-relaxed">
           Award-winning interior design that reflects your unique style and elevates your everyday living experience.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        {/* <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <button className="px-8 py-4 bg-yellow-600 text-white font-semibold rounded-none hover:bg-yellow-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
             View Our Work
           </button>
           <button className="px-8 py-4 border-2 border-white text-white font-semibold rounded-none hover:bg-white hover:text-neutral-800 transition-all duration-300">
             Get Consultation
           </button>
-        </div>
+        </div> */}
       </div>
 
       {/* Scroll Indicator */}
