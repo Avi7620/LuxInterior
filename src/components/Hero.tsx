@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/40 z-10"></div>
         <img 
-          src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080"
+          src="/images/main.jpeg"
           alt="Luxury Interior"
           className="w-full h-full object-cover"
         />

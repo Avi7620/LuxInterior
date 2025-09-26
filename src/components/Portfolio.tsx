@@ -24,37 +24,37 @@ const Portfolio: React.FC = () => {
   const portfolioItems = [
     {
       id: 1,
-      image: 'https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/images/l1.jpeg',
       title: 'Modern Living Room',
       category: 'Residential',
     },
     {
       id: 2,
-      image: '',
+      image: '/images/l2.webp',
       title: 'Luxury Kitchen',
       category: 'Residential',
     },
     {
       id: 3,
-      image: '',
+      image: '/images/l3.jpeg',
       title: 'Executive Office',
       category: 'Commercial',
     },
     {
       id: 4,
-      image: '',
+      image: '/images/l4.jpeg',
       title: 'Master Bedroom',
       category: 'Residential',
     },
     {
       id: 5,
-      image: 'https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/images/l5.webp',
       title: 'Boutique Hotel Lobby',
       category: 'Hospitality',
     },
     {
       id: 6,
-      image: 'https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/images/l6.jpeg',
       title: 'Minimalist Dining',
       category: 'Residential',
     },
