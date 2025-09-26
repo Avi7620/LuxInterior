@@ -74,11 +74,11 @@ const Services: React.FC = () => {
           })}
         </div>
 
-        <div className="text-center mt-16">
+        {/* <div className="text-center mt-16">
           <button className="px-8 py-4 bg-neutral-800 text-white font-semibold hover:bg-neutral-700 transition-colors duration-300">
             Schedule Consultation
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
