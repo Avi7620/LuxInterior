@@ -40,29 +40,29 @@ const About: React.FC = () => {
               })}
             </div>
 
-            <button className="px-8 py-4 border-2 border-neutral-800 text-neutral-800 font-semibold hover:bg-neutral-800 hover:text-white transition-all duration-300">
+            {/* <button className="px-8 py-4 border-2 border-neutral-800 text-neutral-800 font-semibold hover:bg-neutral-800 hover:text-white transition-all duration-300">
               Learn More About Us
-            </button>
+            </button> */}
           </div>
 
           {/* Image */}
-          {/* <div className="relative">
+          <div className="relative">
             <div className="relative overflow-hidden rounded-none shadow-2xl">
               <img 
-                src="https://images.pexels.com/photos/1571467/pexels-photo-1571467.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/images/l7.jpeg"
                 alt="Our Design Process"
                 className="w-full h-96 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-            </div> */}
+            </div>
             
-            {/* <div className="absolute -bottom-6 -right-6 bg-yellow-600 text-white p-6 shadow-xl">
+            <div className="absolute -bottom-6 -right-6 bg-yellow-600 text-white p-6 shadow-xl">
               <div className="text-2xl font-bold">Award</div>
               <div className="text-sm">Winning Design</div>
-            </div> */}
+            </div>
           </div>
         </div>
-      {/* </div> */}
+      </div>
     </section>
   );
 };
